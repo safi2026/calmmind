@@ -1065,21 +1065,26 @@ small,
     align-items: center;
   }
 
+ 
   /* FOOTER */
-  .footer-inner {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
+.footer-inner {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
 
-  .footer-brand,
-  .footer-links,
-  .footer-contact {
-    text-align: center;
-  }
+.footer-brand {
+  grid-column: 1 / -1; 
+  text-align: center;
+}
 
-  .footer-links ul {
-    padding: 0;
-  }
+.footer-links,
+.footer-contact {
+  text-align: center;
+}
+
+.footer-links ul {
+  padding: 0;
+}
 
   /* SERVICES PAGE */
   .service-detail-card {
